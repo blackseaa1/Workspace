@@ -114,11 +114,16 @@ html {
   color: #000;
 }
 
-#header .search-top {
-  float: right;
+#header .search-top,
+#header .mobile-menu-btn {
+  float: right; 
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-#header .search-icon {
+#header .search-icon,
+#header .fa-solid {
   color: #fff;
   /* font-size: 24px;  */
   line-height: 46px;
@@ -131,11 +136,12 @@ html {
   cursor: pointer;
   /* https://www.w3schools.com/cssref/pr_class_cursor.asp */
 }
-  
+#header .mobile-menu-btn:hover .fa-solid {
+  color: #000;
+  background-color:#ccc;
+}
 
 /* slider */
-
-
 
 #slider {
   margin-top: 46px;
@@ -151,7 +157,6 @@ html {
   color: #fff;
   text-align: center;
   bottom: 47px;
-  
 }
 
 #slider .chicago {
@@ -167,18 +172,16 @@ html {
 
 /* slider */
 
-
-
 #content {
-  
 }
-
 
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   padding: 64px 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 16px;
 }
 
 #content .section-heading {
